@@ -8,6 +8,7 @@ public class Runner {
         };
 
         dog.eat();
+        System.out.println(AbstractClassExample.countOfSmth);
 
         InterfaceExample cat = () -> System.out.println("Cat eats.");
 
