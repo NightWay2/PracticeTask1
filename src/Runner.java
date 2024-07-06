@@ -13,5 +13,20 @@ public class Runner {
         InterfaceExample cat = () -> System.out.println("Cat eats.");
 
         cat.eat();
+
+        InterfaceWithTwoMethods racoon = new InterfaceWithTwoMethods() {
+            @Override
+            public void run() {
+                System.out.println("Racoon runs.");
+            }
+
+            @Override
+            public void eat() {
+                System.out.println("Racoon eats.");
+            }
+        };
+
+        racoon.run();
+        racoon.eat();
     }
 }
